@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     "real world assets",
   ],
   alternates: { canonical: "/" },
-  icons: { icon: "/brand/elon-icon.png", apple: "/brand/elon-icon.png" },
   openGraph: {
     title,
     description: siteConfig.description,
