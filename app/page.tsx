@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { siteConfig } from "@/site.config";
 import elonPic from "@/public/brand/elon.png";
+import elonMark from "@/public/brand/elon-mark.png";
 
 const buyLink = siteConfig.buyLink || siteConfig.telegram;
 const tax = `${siteConfig.taxPercent}%`;
@@ -22,7 +23,7 @@ export default function Home() {
       <header className="nav">
         <a className="nav-brand" href="#top">
           <Image
-            src={elonPic}
+            src={elonMark}
             alt="$ELON logo"
             width={34}
             height={34}
