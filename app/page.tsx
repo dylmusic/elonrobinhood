@@ -29,7 +29,7 @@ export default function Home() {
             className="nav-pfp"
           />
           <span>
-            ELON<span className="nav-brand-dim">.finance</span>
+            elonrobinhood<span className="nav-brand-dim">.finance</span>
           </span>
         </a>
         <nav className="nav-links">
