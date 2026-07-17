@@ -8,9 +8,9 @@
   --page: #edece8;
   --surface: #ffffff;
   --surface-soft: #f6f5f1;
-  --mars: #e04a2a;
-  --mars-deep: #b93a20;
-  --mars-soft: #f8ddd4;
+  --neon: #ccff00; /* exact Robinhood Chain neon */
+  --neon-ink: #1c180d; /* the feather ink — text on neon */
+  --neon-hover: #bdf000;
   --rail: 1160px;
   --radius: 12px;
   --shadow-soft: 0 16px 48px rgba(43, 52, 61, 0.1);
@@ -109,13 +109,13 @@ img {
 }
 
 .btn-primary {
-  background: var(--mars);
-  color: #fff;
-  box-shadow: 0 8px 24px rgba(224, 74, 42, 0.32);
+  background: var(--neon);
+  color: var(--neon-ink);
+  box-shadow: 0 8px 24px rgba(204, 255, 0, 0.5);
 }
 
 .btn-primary:hover {
-  background: var(--mars-deep);
+  background: var(--neon-hover);
 }
 
 .btn-ghost {
@@ -141,12 +141,15 @@ img {
 }
 
 .eyebrow {
-  display: block;
+  display: inline-block;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--mars);
+  background: var(--neon);
+  color: var(--neon-ink);
+  padding: 5px 12px;
+  border-radius: 999px;
   margin-bottom: 16px;
 }
 
@@ -159,7 +162,12 @@ img {
 
 .hero h1 em {
   font-style: normal;
-  color: var(--mars);
+  background: var(--neon);
+  color: var(--neon-ink);
+  padding: 0 0.14em;
+  border-radius: 0.14em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .hero-sub {
@@ -225,9 +233,7 @@ img {
 /* ---- Ticker tape ---- */
 .tape {
   overflow: hidden;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  background: var(--surface);
+  background: var(--neon);
   padding: 12px 0;
 }
 
@@ -251,11 +257,12 @@ img {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--neon-ink);
 }
 
 .tape-dot {
-  color: var(--mars);
+  color: var(--neon-ink);
+  opacity: 0.5;
 }
 
 @keyframes tape-scroll {
@@ -365,8 +372,8 @@ img {
   height: 30px;
   margin-bottom: 14px;
   border-radius: 50%;
-  background: var(--mars-soft);
-  color: var(--mars-deep);
+  background: var(--neon);
+  color: var(--neon-ink);
   font-weight: 700;
   font-size: 0.9rem;
 }
@@ -387,8 +394,8 @@ img {
 }
 
 .basket-tsla .basket-sym {
-  background: var(--mars-soft);
-  color: var(--mars-deep);
+  background: var(--neon);
+  color: var(--neon-ink);
 }
 
 .basket-spcx .basket-sym {
@@ -461,7 +468,7 @@ img {
   right: 2px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--mars);
+  color: var(--ink);
   font-weight: 700;
   font-size: 1.2rem;
 }
@@ -477,8 +484,11 @@ img {
 }
 
 .faq details a {
-  color: var(--mars-deep);
+  color: var(--ink);
   font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--neon);
+  text-decoration-thickness: 3px;
 }
 
 /* ---- Final CTA ---- */

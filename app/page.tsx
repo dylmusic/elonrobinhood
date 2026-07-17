@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { siteConfig } from "@/site.config";
-import elonPic from "@/public/brand/elon.webp";
+import elonPic from "@/public/brand/elon.png";
 
 const buyLink = siteConfig.buyLink || siteConfig.telegram;
 const tax = `${siteConfig.taxPercent}%`;
